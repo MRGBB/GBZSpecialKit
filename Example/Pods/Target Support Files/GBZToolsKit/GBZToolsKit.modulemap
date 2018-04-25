@@ -1,0 +1,6 @@
+framework module GBZToolsKit {
+  umbrella header "GBZToolsKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

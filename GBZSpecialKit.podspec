@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GBZSpecialKit'
-  s.version          = '0.1.0'
+  s.version          = '1'
   s.summary          = 'A short description of GBZSpecialKit.'
 
 # This description is used to generate tags and improve search results.
@@ -39,4 +39,14 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  
+  s.dependency 'Masonry'
+  s.dependency 'YYWebImage'
+  s.dependency 'ReactiveCocoa', '~> 2.5'
+  s.dependency 'GBZCategoryKit'
+  s.dependency 'GBZApisKit'
+  s.dependency 'GBZToolsKit'
+  s.dependency 'GBZConfigKit'
+  s.dependency 'GBZMainViewKit'
+  s.dependency 'GBZReformerKeysKit'
 end

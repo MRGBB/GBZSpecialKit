@@ -1,0 +1,6 @@
+framework module GBZApisKit {
+  umbrella header "GBZApisKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

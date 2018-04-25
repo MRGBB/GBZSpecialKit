@@ -1,0 +1,6 @@
+framework module GBZMainViewKit {
+  umbrella header "GBZMainViewKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

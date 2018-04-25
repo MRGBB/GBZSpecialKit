@@ -58,12 +58,12 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6F31945E12284C3126255698 /* GBZSpecialKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = GBZSpecialKit.podspec; path = ../GBZSpecialKit.podspec; sourceTree = "<group>"; };
+		6F31945E12284C3126255698 /* GBZSpecialKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GBZSpecialKit.podspec; path = ../GBZSpecialKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		72971FBC21D97C35A4592ED3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		72971FBC21D97C35A4592ED3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		953CF4590D3D97BFCB6E3666 /* Pods-GBZSpecialKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBZSpecialKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBZSpecialKit_Example/Pods-GBZSpecialKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B66B00FFB49A90EC5F5290B9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B66B00FFB49A90EC5F5290B9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		CC0C4F77AB6DD34F4D5421C0 /* Pods-GBZSpecialKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBZSpecialKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GBZSpecialKit_Example/Pods-GBZSpecialKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D9D48CE53F9C5E41ACEF8351 /* Pods-GBZSpecialKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBZSpecialKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBZSpecialKit_Tests/Pods-GBZSpecialKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EAEFCD686771D509B3BF7EED /* Pods-GBZSpecialKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBZSpecialKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GBZSpecialKit_Tests/Pods-GBZSpecialKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -247,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = MRGBB;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = M66668F2X3;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -319,11 +322,39 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GBZSpecialKit_Example/Pods-GBZSpecialKit_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/GBZApisKit/GBZApisKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GBZCategoryKit/GBZCategoryKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GBZConfigKit/GBZConfigKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GBZMainViewKit/GBZMainViewKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GBZReformerKeysKit/GBZReformerKeysKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GBZSpecialKit/GBZSpecialKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GBZToolsKit/GBZToolsKit.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
+				"${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework",
+				"${BUILT_PRODUCTS_DIR}/YYWebImage/YYWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GBZApisKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GBZCategoryKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GBZConfigKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GBZMainViewKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GBZReformerKeysKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GBZSpecialKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GBZToolsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -485,11 +516,12 @@
 			baseConfigurationReference = CC0C4F77AB6DD34F4D5421C0 /* Pods-GBZSpecialKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M66668F2X3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GBZSpecialKit/GBZSpecialKit-Prefix.pch";
 				INFOPLIST_FILE = "GBZSpecialKit/GBZSpecialKit-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.GBZConfigKit-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -500,11 +532,12 @@
 			baseConfigurationReference = 953CF4590D3D97BFCB6E3666 /* Pods-GBZSpecialKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M66668F2X3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GBZSpecialKit/GBZSpecialKit-Prefix.pch";
 				INFOPLIST_FILE = "GBZSpecialKit/GBZSpecialKit-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.GBZConfigKit-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

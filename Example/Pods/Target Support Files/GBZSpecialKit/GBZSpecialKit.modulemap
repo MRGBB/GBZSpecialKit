@@ -1,0 +1,6 @@
+framework module GBZSpecialKit {
+  umbrella header "GBZSpecialKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

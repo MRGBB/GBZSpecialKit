@@ -1,0 +1,6 @@
+framework module GBZReformerKeysKit {
+  umbrella header "GBZReformerKeysKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
