@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'GBZSpecialKit_Example' do
+  pod 'GBZSpecialKit', :path => '../'
+
+  target 'GBZSpecialKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
