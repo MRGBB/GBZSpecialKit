@@ -15,7 +15,6 @@
 #import "FFSpecialCell.h"
 //#import "FFAuthorDetailController.h"
 #import "FFSpecialDetailController.h"
-
 @interface FFSpecialController ()<APIResponseProtocol,FFCellProtocol>
 
 @property (nonatomic, strong) FFMainView *mainView;
@@ -43,8 +42,12 @@
 }
 
 - (void)cellHeaderIconDidClick:(NSIndexPath *)indexPath params:(NSDictionary *)params {
+    
 //    UIViewController *controller = [[FFAuthorDetailController alloc] init];
-//    [self.navigationController pushViewController:controller animated:YES];
+//    [self.navigationController pushViewController:target animated:YES];
+    
+        UIViewController *controller = [[CTMediator alloc]authorDetailViewController];
+        [self.navigationController pushViewController:controller animated:YES];
 }
 
 - (void)cellDidClick:(NSIndexPath *)indexPath params:(NSDictionary *)params {

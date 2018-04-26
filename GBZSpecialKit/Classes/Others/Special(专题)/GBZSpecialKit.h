@@ -15,6 +15,10 @@
 #import <GBZMainViewKit/GBZMainViewKit-umbrella.h>
 #import <GBZReformerKeysKit/GBZReformerKeysKit-umbrella.h>
 
+#import <GBZAuthorKit_Category/GBZAuthorKit_Category-umbrella.h>
+#import <GBZSpecialKit_Category/GBZSpecialKit_Category-umbrella.h>
+#import "Target_Special.h"
+
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import <Masonry/Masonry.h>
 #import <YYWebImage/YYWebImage.h>

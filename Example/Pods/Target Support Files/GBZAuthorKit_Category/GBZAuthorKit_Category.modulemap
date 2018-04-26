@@ -1,0 +1,6 @@
+framework module GBZAuthorKit_Category {
+  umbrella header "GBZAuthorKit_Category-umbrella.h"
+
+  export *
+  module * { export * }
+}

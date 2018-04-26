@@ -49,4 +49,6 @@ TODO: Add long description of the pod here.
   s.dependency 'GBZConfigKit'
   s.dependency 'GBZMainViewKit'
   s.dependency 'GBZReformerKeysKit'
+  s.dependency 'GBZAuthorKit_Category'
+  s.dependency 'GBZSpecialKit_Category'
 end
